@@ -1,0 +1,124 @@
+@media (min-resolution: 192dpi) {
+  .header {
+    background-image: linear-gradient(
+        0deg,
+        rgba(252, 227, 138, 0.9),
+        rgba(243, 129, 129, 0.9)
+      ),
+      url(../images/eagl@2x.jpg);
+  }
+  .header {
+    padding: 28px 0 228px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(252, 227, 138, 0.9),
+        rgba(243, 129, 129, 0.9)
+      ),
+      url(../images/eagl.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  font-family: $primary-font;
+  align-items: baseline;
+  margin-bottom: 198px;
+}
+.header {
+  padding: 28px 0 228px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(252, 227, 138, 0.9),
+      rgba(243, 129, 129, 0.9)
+    ),
+    url(../images/eagl.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__span {
+    display: block;
+    font-family: $title-script-font;
+    font-size: 72px;
+    margin-bottom: 66px;
+    text-transform: none;
+    letter-spacing: 0px;
+  }
+
+  &__content {
+    width: 820px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title {
+    font-family: $primary-font;
+    font-weight: bold;
+    font-size: 150px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 120px;
+    letter-spacing: -3px;
+
+    &-animation_first {
+      display: flex;
+    }
+  }
+}
+.site-logo__link {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.nav-menu-list {
+  display: flex;
+  text-transform: uppercase;
+
+  &__item:not(:last-child) {
+    margin-right: 48px;
+    font-size: 14px;
+  }
+
+  &__link {
+    color: white;
+    transition: all 200ms linear;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      visibility: hidden;
+      opacity: 0;
+      background-color: #fce38a;
+      transition: all 200ms linear;
+      margin-top: 12px;
+      transform: scale(0);
+    }
+    &:hover {
+      &::after {
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1);
+      }
+      color: #fce38a;
+      .nav-menu-list__link--color {
+        fill: #fce38a;
+      }
+    }
+  }
+}
+
+.header-btn {
+  width: 160px;
+  height: 40px;
+  border: 3px solid white;
+  text-align: center;
+  font-family: $primary-font;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+}

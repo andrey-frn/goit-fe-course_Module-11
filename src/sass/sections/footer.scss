@@ -1,0 +1,56 @@
+.footer {
+  padding-top: 30px;
+  &__copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #333333;
+  }
+  &::before {
+    content: '';
+    display: block;
+    background-color: #e5e5e5;
+    width: 1200px;
+    height: 1px;
+    margin: 0 auto;
+  }
+  &__link {
+    color: #f38181;
+  }
+}
+
+.form {
+  display: flex;
+  width: 380px;
+  &__email {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    width: 230px;
+    border-width: 1px;
+    border-color: #e7e7e7;
+    padding: 8px;
+    outline: none;
+    &::placeholder {
+      color: #999999;
+      font-style: italic;
+    }
+  }
+}
+
+.subscribe-button {
+  padding: 8px 0;
+  width: 150px;
+  background-color: $blue-color;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
